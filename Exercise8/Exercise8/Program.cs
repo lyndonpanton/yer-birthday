@@ -125,27 +125,83 @@ namespace Exercise8
 
             Console.WriteLine();
 
-            // does not account for birthdays on the 1st
             int reminderDay = birthDay - 1;
+            string reminderMonth = "";
             int discountPercentage = 20;
+
+            if (reminderDay == 0)
+            {
+
+                switch (birthMonth)
+                {
+                    case "january":
+                        reminderMonth = "december";
+                        reminderDay = 31;
+                        break;
+                    case "february":
+                        reminderMonth = "january";
+                        reminderDay = 31;
+                        break;
+                    case "march":
+                        reminderMonth = "february";
+                        reminderDay = 29;
+                        break;
+                    case "april":
+                        reminderMonth = "march";
+                        reminderDay = 31;
+                        break;
+                    case "may":
+                        reminderMonth = "april";
+                        reminderDay = 30;
+                        break;
+                    case "june":
+                        reminderMonth = "may";
+                        reminderDay = 31;
+                        break;
+                    case "july":
+                        reminderMonth = "june";
+                        reminderDay = 30;
+                        break;
+                    case "august":
+                        reminderMonth = "july";
+                        reminderDay = 31;
+                        break;
+                    case "september":
+                        reminderMonth = "august";
+                        reminderDay = 31;
+                        break;
+                    case "october":
+                        reminderMonth = "september";
+                        reminderDay = 30;
+                        break;
+                    case "november":
+                        reminderMonth = "october";
+                        reminderDay = 31;
+                        break;
+                    case "december":
+                        reminderMonth = "november";
+                        reminderDay = 30;
+                        break;
+                }
+            }
 
             switch (reminderDay)
             {
                 case 1:
                     Console.WriteLine("You will receive your " + discountPercentage
-                        + "% birthday discount reminder on the " + reminderDay + "st of " + birthMonth);
+                        + "% birthday discount reminder on the " + reminderDay + "st of " + reminderMonth);
                     break;
                 case 2:
                     Console.WriteLine("You will receive your " + discountPercentage
-                        + "% birthday discount reminder on the " + reminderDay + "nd of " + birthMonth);
+                        + "% birthday discount reminder on the " + reminderDay + "nd of " + reminderMonth);
                     break;
                 case 3:
                     Console.WriteLine("You will receive your " + discountPercentage
-                        + "% birthday discount reminder on the " + reminderDay + "rd of " + birthMonth);
+                        + "% birthday discount reminder on the " + reminderDay + "rd of " + reminderMonth);
                     break;
                 default:
                     Console.WriteLine("You will receive your " + discountPercentage
-                        + "% birthday discount reminder on the " + reminderDay + "th of " + birthMonth);
+                        + "% birthday discount reminder on the " + reminderDay + "th of " + reminderMonth);
                     break;
             }
 
