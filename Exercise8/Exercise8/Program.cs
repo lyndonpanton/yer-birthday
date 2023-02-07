@@ -106,6 +106,22 @@ namespace Exercise8
 
                 Console.WriteLine();
             }
+
+            switch (birthDay)
+            {
+                case 1:
+                    Console.WriteLine("Your birthday is on the " + birthDay + "st of " + birthMonth);
+                    break;
+                case 2:
+                    Console.WriteLine("Your birthday is on the " + birthDay + "nd of " + birthMonth);
+                    break;
+                case 3:
+                    Console.WriteLine("Your birthday is on the " + birthDay + "rd of " + birthMonth);
+                    break;
+                default:
+                    Console.WriteLine("Your birthday is on the " + birthDay + "th of " + birthMonth);
+                    break;
+            }
         }
     }
 }
