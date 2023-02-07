@@ -1,0 +1,15 @@
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\bin\Debug\net6.0\Exercise8.exe
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\bin\Debug\net6.0\Exercise8.deps.json
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\bin\Debug\net6.0\Exercise8.runtimeconfig.json
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\bin\Debug\net6.0\Exercise8.dll
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\bin\Debug\net6.0\Exercise8.pdb
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\obj\Debug\net6.0\Exercise8.csproj.AssemblyReference.cache
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\obj\Debug\net6.0\Exercise8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\obj\Debug\net6.0\Exercise8.AssemblyInfoInputs.cache
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\obj\Debug\net6.0\Exercise8.AssemblyInfo.cs
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\obj\Debug\net6.0\Exercise8.csproj.CoreCompileInputs.cache
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\obj\Debug\net6.0\Exercise8.dll
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\obj\Debug\net6.0\refint\Exercise8.dll
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\obj\Debug\net6.0\Exercise8.pdb
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\obj\Debug\net6.0\Exercise8.genruntimeconfig.cache
+C:\Users\lyndo\GitHubProjects\yer-birthday\Exercise8\Exercise8\obj\Debug\net6.0\ref\Exercise8.dll
