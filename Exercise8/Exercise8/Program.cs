@@ -1,18 +1,22 @@
-﻿namespace Exercise8
+﻿using System.Diagnostics;
+
+namespace Exercise8
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            
-            bool passed = false;
+            string birthMonth = "";
+            int birthDay = -1;
 
-            while (!passed)
+            bool monthPassed = false;
+
+            while (!monthPassed)
             {
                 Console.Write("Enter the month of your birthday: ");
-                string birthday = Console.ReadLine().ToLower();
+                birthMonth = Console.ReadLine().ToLower();
 
-                switch (birthday)
+                switch (birthMonth)
                 {
                     case "january":
                     case "february":
@@ -26,15 +30,81 @@
                     case "october":
                     case "november":
                     case "december":
-                        passed = true;
+                        monthPassed = true;
                         break;
                     default:
+                        Console.WriteLine();
                         Console.WriteLine("Invalid month entered");
                         Console.WriteLine("Please try again");
-                        Console.WriteLine();
                         break;
                 }
 
+                Console.WriteLine();
+
+            }
+
+            bool dayPassed = false;
+
+            while (!dayPassed)
+            { 
+                Console.Write("Enter the day in the month of your birthday: ");
+                birthDay = int.Parse(Console.ReadLine());
+
+                switch (birthMonth)
+                {
+                    // always allows leap years
+                    case "february":
+                        if (birthDay >= 1 && birthDay <= 29)
+                        {
+                            dayPassed = true;
+                        } else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid day for that month entered");
+                            Console.WriteLine("Day should be between 1 and 29");
+                            Console.WriteLine("Please try again");
+                        }
+                        break;
+                    // 30 day months
+                    case "april":
+                    case "june":
+                    case "september":
+                    case "november":
+                        if (birthDay >= 1 && birthDay <= 30)
+                        {
+                            dayPassed = true;
+                        } else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid day for that month entered");
+                            Console.WriteLine("Day should be between 1 and 30");
+                            Console.WriteLine("Please try again");
+                        }
+                        break;
+                    // 31 day months
+                    case "january":
+                    case "march":
+                    case "may":
+                    case "july":
+                    case "august":
+                    case "october":
+                    case "december":
+                        if (birthDay >= 1 && birthDay <= 31)
+                        {
+                            dayPassed = true;
+                        } else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Invalid day for that month entered");
+                            Console.WriteLine("Day should be between 1 and 31");
+                            Console.WriteLine("Please try again");
+                        }
+                        break;
+                    default:
+                        break;
+                }
+
+                Console.WriteLine();
             }
         }
     }
