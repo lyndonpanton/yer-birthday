@@ -122,6 +122,34 @@ namespace Exercise8
                     Console.WriteLine("Your birthday is on the " + birthDay + "th of " + birthMonth);
                     break;
             }
+
+            Console.WriteLine();
+
+            // does not account for birthdays on the 1st
+            int reminderDay = birthDay - 1;
+            int discountPercentage = 20;
+
+            switch (reminderDay)
+            {
+                case 1:
+                    Console.WriteLine("You will receive your " + discountPercentage
+                        + "% birthday discount reminder on the " + reminderDay + "st of " + birthMonth);
+                    break;
+                case 2:
+                    Console.WriteLine("You will receive your " + discountPercentage
+                        + "% birthday discount reminder on the " + reminderDay + "nd of " + birthMonth);
+                    break;
+                case 3:
+                    Console.WriteLine("You will receive your " + discountPercentage
+                        + "% birthday discount reminder on the " + reminderDay + "rd of " + birthMonth);
+                    break;
+                default:
+                    Console.WriteLine("You will receive your " + discountPercentage
+                        + "% birthday discount reminder on the " + reminderDay + "th of " + birthMonth);
+                    break;
+            }
+
+            Console.WriteLine();
         }
     }
 }
